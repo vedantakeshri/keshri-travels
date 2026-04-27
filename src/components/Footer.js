@@ -1,6 +1,5 @@
 // import "./Footer.css";
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,26 +10,31 @@ function Footer() {
         {/* Brand Section */}
         <div className="footer-brand">
           <h3>Keshri Travels</h3>
-          <p>Explore the world with comfort, safety, and unforgettable journeys.</p>
-        </div>
-
-        {/* Links */}
-        <div className="footer-links">
-          <h4>Quick Links</h4>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-<a href="#packages">Packages</a>
+          <p>
+            Explore the world with comfort, safety, and unforgettable journeys.
+          </p>
         </div>
 
         {/* Social */}
         <div className="footer-social">
           <h4>Follow Us</h4>
+
           <div className="icons">
-            <FaInstagram />
-            <FaFacebook />
-            <FaTwitter />
-            <FaLinkedin />
+            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+              <FaInstagram />
+            </a>
+
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
+              <FaFacebook />
+            </a>
+
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              <FaTwitter />
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+              <FaLinkedin />
+            </a>
           </div>
         </div>
 
