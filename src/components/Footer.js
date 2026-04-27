@@ -1,5 +1,6 @@
 // import "./Footer.css";
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -16,10 +17,10 @@ function Footer() {
         {/* Links */}
         <div className="footer-links">
           <h4>Quick Links</h4>
-          <Link href="#">About</Link>
-          <Link href="#">Services</Link>
-          <Link href="#">Contact</Link>
-          <Link href="#">Packages</Link>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+<a href="#packages">Packages</a>
         </div>
 
         {/* Social */}
