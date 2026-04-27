@@ -5,17 +5,20 @@ function Hero() {
   return (
     <section className="hero">
 
+      {/* Background glow */}
+      <div className="hero-bg"></div>
+
       <motion.div
         className="hero-content"
-        initial={{ opacity: 0, y: 80 }}
+        initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.7 }}
       >
 
         <motion.span
           className="hero-badge"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
         >
           ✈️ Trusted Travel Partner
@@ -26,21 +29,22 @@ function Hero() {
         </h1>
 
         <p>
-          Safe, comfortable, and affordable journeys crafted for unforgettable experiences across India and beyond.
+          Safe, comfortable, and affordable journeys crafted for unforgettable
+          experiences across India and beyond.
         </p>
 
         <div className="hero-buttons">
 
           <motion.button
-            className="hero-btn primary"
-            whileHover={{ scale: 1.08 }}
+            className="btn primary"
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
             Book Now
           </motion.button>
 
           <motion.button
-            className="hero-btn secondary"
+            className="btn secondary"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -49,9 +53,29 @@ function Hero() {
 
         </div>
 
+        {/* Stats */}
+        <div className="hero-stats">
+
+          <div className="stat">
+            <h3>10K+</h3>
+            <p>Happy Travelers</p>
+          </div>
+
+          <div className="stat">
+            <h3>50+</h3>
+            <p>Destinations</p>
+          </div>
+
+          <div className="stat">
+            <h3>5★</h3>
+            <p>Rated Service</p>
+          </div>
+
+        </div>
+
       </motion.div>
 
-      {/* Decorative blur circles */}
+      {/* Decorative shapes */}
       <div className="circle c1"></div>
       <div className="circle c2"></div>
 
