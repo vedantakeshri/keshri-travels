@@ -16,10 +16,10 @@ function Footer() {
         {/* Links */}
         <div className="footer-links">
           <h4>Quick Links</h4>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Contact</a>
-          <a href="#">Packages</a>
+          <Link href="#">About</Link>
+          <Link href="#">Services</Link>
+          <Link href="#">Contact</Link>
+          <Link href="#">Packages</Link>
         </div>
 
         {/* Social */}
