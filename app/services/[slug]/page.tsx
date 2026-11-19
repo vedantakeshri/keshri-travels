@@ -562,7 +562,7 @@ export default async function ServicePage({
 
         <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-7">
           <p className="text-xs leading-6 text-blue-100/40">
-            © {new Date().getFullYear()} Keshri Travels. All rights reserved.
+            © 2026 Keshri Travels. All rights reserved.
           </p>
           <p className="mt-4 max-w-4xl text-[11px] leading-6 text-blue-100/40">
             Services are subject to provider availability and applicable authorisations. AEPS, Micro ATM and money transfer services are provided only through authorised partners where available. Investment-related services are subject to applicable regulations and market risks. This website is an enquiry channel, not a bank, government portal or investment adviser. Never share OTPs, PINs, passwords, Aadhaar numbers or banking credentials through this website or ordinary WhatsApp messages.
