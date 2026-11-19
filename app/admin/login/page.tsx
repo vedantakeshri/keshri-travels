@@ -380,7 +380,7 @@ export default function AdminLogin() {
             </a>
 
             <p className="mt-8 text-center text-xs text-slate-400">
-              © {new Date().getFullYear()} Keshri Travels. All rights reserved.
+              © 2026 Keshri Travels. All rights reserved.
             </p>
           </div>
         </section>

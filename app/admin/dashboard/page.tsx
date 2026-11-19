@@ -661,7 +661,7 @@ export default function AdminDashboard() {
             </section>
 
             <footer className="pb-4 text-center text-xs text-slate-400">
-              © {new Date().getFullYear()} Keshri Travels · Danapur Cantt, Patna
+              © 2026 Keshri Travels · Danapur Cantt, Patna
             </footer>
 
           </div>
