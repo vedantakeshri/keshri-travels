@@ -216,7 +216,7 @@ export default function AdminLogin() {
           {/* FOOTER */}
           <div className="relative z-10 flex items-center justify-between border-t border-white/10 pt-6 text-xs text-blue-200/60">
             <span>Danapur Cantt, Patna, Bihar</span>
-            <span>© {new Date().getFullYear()} Keshri Travels</span>
+            <span>© 2026 Keshri Travels</span>
           </div>
         </section>
 
