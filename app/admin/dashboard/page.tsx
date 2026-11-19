@@ -151,14 +151,27 @@ export default function AdminDashboard() {
     [enquiries]
   );
 
-  const today = dateKey(new Date());
+//   const today = dateKey(new Date());
 
-  const followUpsDue = enquiries.filter((item) => {
-    if (!item.follow_up_at) return false;
-    if (["Completed", "Cancelled"].includes(item.status)) return false;
+//   const followUpsDue = enquiries.filter((item) => {
+//     if (!item.follow_up_at) return false;
+//     if (["Completed", "Cancelled"].includes(item.status)) return false;
 
-    return item.follow_up_at.slice(0, 10) <= today;
-  });
+//     return item.follow_up_at.slice(0, 10) <= today;
+//   });
+
+const [today, setToday] = useState("");
+
+useEffect(() => {
+  setToday(dateKey(new Date()));
+}, []);
+
+const followUpsDue = enquiries.filter((item) => {
+  if (!today || !item.follow_up_at) return false;
+  if (["Completed", "Cancelled"].includes(item.status)) return false;
+
+  return item.follow_up_at.slice(0, 10) <= today;
+});
 
   const confirmedCount = enquiries.filter(
     (item) => item.status === "Confirmed"
